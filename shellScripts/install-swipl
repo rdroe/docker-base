@@ -1,0 +1,7 @@
+
+# add-apt-repository ppa:swi-prolog/stable
+
+apt-get update
+
+apt-get install swi-prolog -y
+

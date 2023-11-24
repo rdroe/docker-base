@@ -1,0 +1,4 @@
+git clone https://github.com/LogtalkDotOrg/logtalk3.git
+cd logtalk3
+cd scripts
+sudo ./install.sh

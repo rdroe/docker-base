@@ -1,0 +1,13 @@
+If running virtulbox on windows,  replace windows line endings with linux ones for every *.sh script you run. One that has worked in theee past is
+   /vagrant$ sed -i 's/\r//' /vagrant/aliases.sh
+
+Install nvm / node (same script)
+Next install nshell or copy nshell from /vagrant to $HOME
+install kitty (script) and set it as a favorite
+after that, you should be able to run the rb-cli script
+and after that you should be able to cd into ~/sites/start-roebooks and do node index.js
+Do configure-git.sh before expecting to use emacs well
+You may need to install emacs; sudo snap install emacs --edge --classic
+
+Before doing js or ts dev, use bash set-up-emacs and bash aliases.sh
+
