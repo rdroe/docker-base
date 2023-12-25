@@ -1,1 +1,1 @@
-docker build . -t base
+docker build . -t base --ssh default 
