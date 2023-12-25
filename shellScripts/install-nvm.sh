@@ -10,11 +10,11 @@ nvm install 18
 nvm use 18
 
 npm install --global yarn
-n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
+n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*;  cp -r $n/{bin,lib,share} /usr/local
 
 exec $SHELL
 
 # below is untested--but should install nvm for all users 
-n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
+n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*;  cp -r $n/{bin,lib,share} /usr/local
 
-exec 'n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local'
+exec 'n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; cp -r $n/{bin,lib,share} /usr/local'
