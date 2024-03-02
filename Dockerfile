@@ -12,7 +12,7 @@ COPY shellScripts/ ./shellScripts/
 # https://stackoverflow.com/questions/25899912/how-to-install-nvm-in-docker/60137919#60137919
 
 ENV NVM_DIR="/home/root/.nvm"
-ENV NODE_VERSION v18.18.2
+ENV NODE_VERSION v20.10.0
 RUN mkdir -p /usr/local/nvm && apt-get update && echo "y" | apt-get install curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 RUN /bin/bash -c "source $NVM_DIR/nvm.sh && nvm install $NODE_VERSION && nvm use --delete-prefix $NODE_VERSION"
